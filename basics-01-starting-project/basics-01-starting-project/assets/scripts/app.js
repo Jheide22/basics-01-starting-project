@@ -1,6 +1,8 @@
-alert("It works!");
-let currentResult = 10;
-let calculationDesc = '' +currentResult + ' + 10'
+const defaultResult = 0;
+let currentResult = defaultResult;
+
 currentResult = currentResult + 10;
+
+let calculationDesc = '' +currentResult + ' + 10'
 
 outputResult(currentResult, calculationDesc);
