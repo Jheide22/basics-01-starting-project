@@ -1,8 +1,19 @@
 const defaultResult = 0;
-let currentResult = defaultResult;
+let currentResult;
 
-currentResult = currentResult + 10;
+function add(){
+    currentResult = currentResult + userInput.value;
+    outputResult(currentResult, calculationDesc); 
+}
+function subtract(){
+    currentResult = currentResult - userInput.value;
+    outputResult(currentResult, calculationDesc); 
+}
+function multiply(){
+    currentResult = currentResult * userInput.value;
+    outputResult(currentResult, calculationDesc); 
+}
 
-let calculationDesc = '' + currentResult + ' + 10'; 
-let errorMsg = 'ERROR';
-outputResult(currentResult, calculationDesc); 
+addBtn.addEventListener('click', add);
+subtractBtn.addEventListener('click', subtract);
+multiplyBtn.addEventListener('click', multiply);
