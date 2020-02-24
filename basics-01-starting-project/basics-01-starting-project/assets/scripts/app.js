@@ -11,25 +11,25 @@ function createAndWriteOutput(operator, resultBeforeCalc, calcNumber){
 function add(){
     const eneteredNumber = getUserInput();
     const initialResult = currentResult;
-    currentResult = currentResult + eneteredNumber; 
+    currentResult += eneteredNumber; 
     createAndWriteOutput('+', initialResult, eneteredNumber);
 }
 function subtract(){
     const eneteredNumber = getUserInput();
     const initialResult = currentResult;
-    currentResult = currentResult - eneteredNumber;
+    currentResult -= eneteredNumber;
     createAndWriteOutput('-', initialResult, eneteredNumber);
 }
 function multiply(){
     const eneteredNumber = getUserInput();
     const initialResult = currentResult;
-    currentResult = currentResult * eneteredNumber; 
+    currentResult *= eneteredNumber; 
     createAndWriteOutput('*', initialResult, eneteredNumber);
 }
 function divide(){
     const eneteredNumber = getUserInput();
     const initialResult = currentResult;
-    currentResult = currentResult / eneteredNumber; 
+    currentResult /= eneteredNumber; 
     createAndWriteOutput('/', initialResult, eneteredNumber);
 }
 
