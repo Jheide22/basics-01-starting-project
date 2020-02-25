@@ -1,4 +1,5 @@
 const defaultResult = 0;
+let logEntries = [];
 let currentResult = defaultResult;
 
 function getUserInput() {
@@ -13,6 +14,8 @@ function add(){
     const initialResult = currentResult;
     currentResult += eneteredNumber; 
     createAndWriteOutput('+', initialResult, eneteredNumber);
+    logEntries.push(eneteredNumber);
+    console.log(logEntries);
 }
 function subtract(){
     const eneteredNumber = getUserInput();
