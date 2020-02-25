@@ -24,32 +24,32 @@ function createAndWriteOutput(operator, resultBeforeCalc, calcNumber){
     outputResult(currentResult, calcDescription);
 }
 function add(){
-    const eneteredNumber = getUserInput();
+    const enteredNumber = getUserInput();
     const initialResult = currentResult;
-    currentResult += eneteredNumber; 
-    createAndWriteOutput('+', initialResult, eneteredNumber);
-    writeToLog('ADD', initialResult, eneteredNumber, currentResult);
+    currentResult += enteredNumber; 
+    createAndWriteOutput('+', initialResult, enteredNumber);
+    writeToLog('ADD', initialResult, enteredNumber, currentResult);
 }
 function subtract(){
-    const eneteredNumber = getUserInput();
+    const enteredNumber = getUserInput();
     const initialResult = currentResult;
-    currentResult -= eneteredNumber;
-    createAndWriteOutput('-', initialResult, eneteredNumber);
-    writeToLog('SUBTRACT', initialResult, eneteredNumber, currentResult);
+    currentResult -= enteredNumber;
+    createAndWriteOutput('-', initialResult, enteredNumber);
+    writeToLog('SUBTRACT', initialResult, enteredNumber, currentResult);
 }
 function multiply(){
-    const eneteredNumber = getUserInput();
+    const enteredNumber = getUserInput();
     const initialResult = currentResult;
-    currentResult *= eneteredNumber; 
-    createAndWriteOutput('*', initialResult, eneteredNumber);
-    writeToLog('MULTIPLY', initialResult, eneteredNumber, currentResult);
+    currentResult *= enteredNumber; 
+    createAndWriteOutput('*', initialResult, enteredNumber);
+    writeToLog('MULTIPLY', initialResult, enteredNumber, currentResult);
 }
 function divide(){
-    const eneteredNumber = getUserInput();
+    const enteredNumber = getUserInput();
     const initialResult = currentResult;
-    currentResult /= eneteredNumber; 
-    createAndWriteOutput('/', initialResult, eneteredNumber);
-    writeToLog('DIVIDE', initialResult, eneteredNumber, currentResult);
+    currentResult /= enteredNumber; 
+    createAndWriteOutput('/', initialResult, enteredNumber);
+    writeToLog('DIVIDE', initialResult, enteredNumber, currentResult);
 }
 
 addBtn.addEventListener('click', add);
