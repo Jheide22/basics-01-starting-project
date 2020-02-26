@@ -26,7 +26,7 @@ function createAndWriteOutput(operator, resultBeforeCalc, calcNumber){
 function add(){
     const enteredNumber = getUserInput();
     const initialResult = currentResult;
-    currentResult += enteredNumber; 
+    currentResult += enteredNumber;
     createAndWriteOutput('+', initialResult, enteredNumber);
     writeToLog('ADD', initialResult, enteredNumber, currentResult);
 }
